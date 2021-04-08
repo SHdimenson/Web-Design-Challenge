@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Latitude vs Cloudiness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><b>Home</b></a>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                    <b>Plots</b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="latvstemperature.html">Max Temperature</a></li>
+                    <li><a class="dropdown-item" href="latvshumidity.html">Humidity</a></li>
+                    <li><a class="dropdown-item" href="latvscloud.html">Cloudiness</a></li>
+                    <li><a class="dropdown-item" href="latvswindspeed.html">Wind Speed</a></li>
+                </ul>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="comparisons.html"><b>Comparison</b></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active" href="data.html"><b>Data</b></a>
+              </li>
+            </ul>
+         </div>
+        </div>
+    </nav>
+    <div class="container bg">
+        <div class="row">
+            <div class="col-md-12 col-lg-6 mt-5">
+                <div class="card animate__animated animate__zoomIn">
+                  <h4 class="card-header text-info">Summary: Latitude vs Humidity</h4>
+                    <div class="card-body">
+                        <img id="img-wrap" class="img-fluid img-center" src="Resources/assets/images/Fig2.png" Title="Lat vs Humidity" width="595">
+                        <p class="card-text font-weight-light">The scatterplot for Latitude vs Humidity does not appear to have much correlation. From the data points visualized, we can see that a large number of cities seem to have high humidity levels, with the majority being near the equator or in the northern hemisphere.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-6 mt-5">
+                <div class="card animate__animated animate__zoomIn">
+                    <h4 class="card-header text-info">Visualizations</h4>
+                    <div class="card-body">
+
+                        <div class="row pb-4" >
+                            <div class="col-md-6">
+                                <a href="latvstemperature.html"><img class="img-fluid img-center viz-box" src="Resources/assets/images/Fig1.png" title="Lat vs Temp" width="470"></a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="latvshumidity.html"><img class="img-fluid img-center viz-box active" src="Resources/assets/images/Fig2.png" title="Lat vs Humidity" width="470"></a>
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-md-6">
+                                <a href="latvscloud.html"><img class="img-fluid img-center viz-box" src="Resources/assets/images/Fig3.png" title="Lat vs Cloudiness" width="470"></a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="latvswindspeed.html"><img class="img-fluid img-center viz-box" src="Resources/assets/images/Fig4.png" title="Lat vs Wind Speed" width="470"></a>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>

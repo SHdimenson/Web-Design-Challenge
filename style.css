@@ -1,0 +1,62 @@
+body {
+    background-image: url("https://images.wallpaperscraft.com/image/new_zealand_panorama_skyscrapers_buildings_shore_lighting_119195_2560x1440.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: stretch;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.navbar-brand {
+    background-color: #94c4f1 ;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover {
+    background-color: #94c4f1 ;
+    color: white ;
+}
+
+.dropdown-item:hover {
+    background-color: #94c4f1;
+    color: white;   
+}
+
+.card-body .active {
+    border-color: #17a2b8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar-light.bg-white {
+        background-color: #17a2b8 !important;
+    }
+    .nav-link {
+        color: white !important;
+    }
+    #img-wrap {
+        float: none;
+    }
+}
+
+#img-wrap {
+    float: left;
+}
+
+#img-wrap-1{
+    float: center;
+
+}
+
+.viz-box:hover {
+    border-color: #17a2b8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+}
